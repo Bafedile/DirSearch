@@ -62,7 +62,7 @@ namespace DirSearch{
             string url = "http://127.0.0.1";
             int port;
             try{
-                if(args.Length ==4){
+                if(args.Length >=3){
                 // check if the url is valid 
                     if(args[1].Contains("http")){
                         // check if the port is a digit 
@@ -72,23 +72,26 @@ namespace DirSearch{
                             port = Convert.ToInt32(args[2]); 
                             string full_url = url+":"+port+"/";
 
-                            // check if the wordlist is a text file 
-                            if(args[3].EndsWith(".txt")){
-                                // assign the wordlist text file 
-                                directories = File.ReadAllLines(args[3]);
-                                Task task = Task.Run(()=>Search(full_url,directories));
-                                task.Wait();
-                            }else if(args[3] == null){
+                            if(args.Length==4){
+                                // check if the wordlist is a text file 
+                                if(args[3].EndsWith(".txt")){
+                                    // assign the wordlist text file 
+                                    directories = File.ReadAllLines(args[3]);
+                                    Task task = Task.Run(()=>Search(full_url,directories));
+                                    task.Wait();
+                                }
+                                
+                                else{
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Wordlist should be a text file\nE.g wordlist.txt");
+                                }
+                            }else{
                                 // use the default wordlist text file 
-                                directories  = File.ReadAllLines("big.txt");    
-                                Task task = Task.Run(()=>Search(full_url,directories));
-                                task.Wait();
+                                    directories  = File.ReadAllLines("big.txt");    
+                                    Task task = Task.Run(()=>Search(full_url,directories));
+                                    task.Wait();
                             }
                             
-                            else{
-                                Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("Wordlist should be a text file\nE.g wordlist.txt");
-                            }
                         }else{
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("A port should consist of only digits\nE.g 443,80");
