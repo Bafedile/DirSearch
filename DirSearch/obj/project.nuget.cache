@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MxOM0+y8ygH3K7tdhcEgaUHFdUlvOUegmZhVeBeYLUwpmZJQvLkh7BeNW3j1UlG2idxJubwQuU5F56u/DU7+9w==",
+  "dgSpecHash": "CX6XQZsk9EOnt5+db7PdeaDsWVM3oFPTxDifD8qUm36EPFX5ZuGMy3rKpdwUg8oStYj4uy04AsLRqAE2i7Nm0w==",
   "success": true,
   "projectFilePath": "/home/beno/Desktop/Programming/C#-Programming/DirSearch/DirSearch.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/beno/.nuget/packages/figlet.net/1.1.2/figlet.net.1.1.2.nupkg.sha512",
+    "/home/beno/.nuget/packages/jetbrains.annotations/2020.1.0/jetbrains.annotations.2020.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

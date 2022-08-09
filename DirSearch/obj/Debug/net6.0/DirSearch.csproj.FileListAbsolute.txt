@@ -28,3 +28,6 @@
 /home/beno/Desktop/Programming/C#-Programming/DirSearch/bin/Debug/net6.0/DirSearch.pdb
 /home/beno/Desktop/Programming/C#-Programming/DirSearch/obj/Debug/net6.0/DirSearch.genruntimeconfig.cache
 /home/beno/Desktop/Programming/C#-Programming/DirSearch/obj/Debug/net6.0/ref/DirSearch.dll
+/home/beno/Desktop/Programming/C#-Programming/DirSearch/bin/Debug/net6.0/WenceyWang.FIGlet.dll
+/home/beno/Desktop/Programming/C#-Programming/DirSearch/bin/Debug/net6.0/JetBrains.Annotations.dll
+/home/beno/Desktop/Programming/C#-Programming/DirSearch/obj/Debug/net6.0/DirSearch.csproj.CopyComplete
